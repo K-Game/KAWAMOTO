@@ -11,6 +11,7 @@ void Player::Init() {
 		no
 
 		fuck yosimoto
+		aaa
 }
 
 
