@@ -8,6 +8,8 @@ void Player::Init() {
 
 	getchar;
 	fuck git
+		not
+
 		fuck yosimoto
 }
 
