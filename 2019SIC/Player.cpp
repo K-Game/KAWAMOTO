@@ -6,12 +6,7 @@
 
 void Player::Init() {
 
-	getchar;
-	fuck git
-		no
 
-		fuck yosimoto
-		aaa
 }
 
 
