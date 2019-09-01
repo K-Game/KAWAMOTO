@@ -6,6 +6,11 @@
 
 ENEMYS*  Enemy;
 
+
+
+
+
+
 void ENEMYS::Init() {
 	
 }

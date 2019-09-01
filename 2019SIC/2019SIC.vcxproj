@@ -157,6 +157,7 @@
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="HitCheck.cpp" />
     <ClCompile Include="Key.cpp" />
+    <ClCompile Include="Obj2d.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Shot.cpp" />
     <ClCompile Include="WinMain.cpp" />
@@ -165,6 +166,8 @@
     <ClInclude Include="enemy.h" />
     <ClInclude Include="hitcheck.h" />
     <ClInclude Include="Key.h" />
+    <ClInclude Include="Math.h" />
+    <ClInclude Include="Obj2d.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="shot.h" />
     <ClInclude Include="winmain.h" />
