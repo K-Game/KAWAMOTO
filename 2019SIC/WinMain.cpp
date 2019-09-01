@@ -2,6 +2,8 @@
 
 #include "DxLib.h"
 #include "winmain.h" 
+#include "Key.h"
+
 
 
 
@@ -30,6 +32,11 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 		SceneManager::Update();
 		SceneManager::Draw();
+
+
+		KeyUpdate();
+
+		if(Key[KEY_INPUT_RIGHT]==1)SceneManager::ChangeScene(SceneManager::SCENE::GAME);
 
 
 		}
@@ -62,7 +69,7 @@ void GameScene::Init()
 
 void GameScene::Update()
 {
-
+	int a = 0;
 }
 
 void GameScene::Draw()
