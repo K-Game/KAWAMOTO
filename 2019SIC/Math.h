@@ -1,4 +1,12 @@
 #pragma once
+
+//前方宣言
+class VECTOR2D;
+VECTOR2D VGet2D(float x, float y);
+
+
+
+
 class VECTOR2D
 {
 public:
@@ -16,7 +24,8 @@ public:
 
 };
 
-VECTOR2D VGet2D(float x,float y)
+//2Dベクトル取得関数
+VECTOR2D VGet2D(float x, float y)
 {
 	VECTOR2D result;
 	result.x = x;
