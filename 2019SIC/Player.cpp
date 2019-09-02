@@ -3,17 +3,26 @@
 #include "DxLib.h"
 #include "player.h"
 #include "shot.h"
+#include "Obj2d.h"
+
+Player* player;
 
 void Player::Init() {
-
+	player->;
 
 }
 
 
 void Player::Undeta() {
-		
-		PMove();
-		DeadCheck();
+
+	switch (player->mode){
+	case P_ALIVE:
+
+		break;
+	case P_DEAD:
+
+		break;
+	}
 
 }
 
