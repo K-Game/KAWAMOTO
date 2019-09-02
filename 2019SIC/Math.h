@@ -1,15 +1,10 @@
 #pragma once
 
-
-
-
 class VECTOR2D
 {
 public:
 	float x;
 	float y;
-
-	//
 
 	//2DƒxƒNƒgƒ‹æ“¾ŠÖ”
 	static VECTOR2D VGet2D(float x, float y)

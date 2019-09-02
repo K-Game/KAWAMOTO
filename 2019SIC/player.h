@@ -19,7 +19,6 @@ private:
 
 public:
 
-
 	//ƒVƒXƒeƒ€
 	void Init();
 	void Undeta();
