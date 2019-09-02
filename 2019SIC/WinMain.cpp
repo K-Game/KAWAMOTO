@@ -4,11 +4,7 @@
 #include "winmain.h" 
 #include "Key.h"
 
-
-
-
-bool LoopSet() {
-	return
+void LoopSet() {
 	ScreenFlip() == 0
 	&& ProcessMessage() == 0
 	&& ClearDrawScreen() == 0;
