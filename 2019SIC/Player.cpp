@@ -7,24 +7,26 @@
 
 Player* player;
 
-void Player::Init() {
+void PlayerManager::Init() {
 	
 }
 
 
-void Player::Undeta() {
+void PlayerManager::Update() {
 
 
 
 }
 
-void Player::PMove() {
+void PlayerManager::Draw() {
 
 
 	
 }
 
-void Player::DeadCheck(){
+//ƒvƒŒƒCƒ„[‚ÌˆÚ“®ˆ—
+void PlayerMove(OBJ2D obj)
+{
 
 }
 

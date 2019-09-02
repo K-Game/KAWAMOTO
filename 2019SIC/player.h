@@ -1,5 +1,5 @@
 #pragma once
-
+#include "Obj2d.h"
 enum {
 	PWAIT_L,
 	PWAIT_R,
@@ -12,22 +12,32 @@ enum {
 };
 
 
-class Player {
+class Player:public OBJ2D {
 private:
 	Player();
 	~Player();
 
 public:
-
-	//ƒVƒXƒeƒ€
-	void Init();
-	void Undeta();
-	void Render();
-
 	//‹““®
-	void PMove();
-	void DeadCheck();
-
 	void PShot();
-
 };
+
+class PlayerManager
+{
+
+public:
+	static PlayerManager* GetInstance()
+	{
+		static PlayerManager playerManager;
+		return &playerManager;
+	}
+
+private:
+	Player* player;
+public:
+	void Init();
+	void Update();
+	void Draw();
+};
+
+#define pManager (PlayerManager::GetInstance())
