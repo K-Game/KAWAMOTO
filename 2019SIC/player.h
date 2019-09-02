@@ -18,10 +18,7 @@ private:
 	~Player();
 
 public:
-	float x, y;
-	float mx, my;
-	
-	int mode;
+
 
 	//ƒVƒXƒeƒ€
 	void Init();
