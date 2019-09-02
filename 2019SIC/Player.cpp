@@ -5,31 +5,38 @@
 #include "shot.h"
 #include "Obj2d.h"
 
-Player* player;
+
+
 
 void PlayerManager::Init() {
+
+	player = new Player;
+	player->LoadSprite("../Data/MOVE1.png", OBJ2D::STATE::LRUN, 0);
+	player->state = OBJ2D::STATE::LRUN;
+	player->SpriteNumber = 0;
+	player->position = VECTOR2D::VGet2D(300, 300);
+	player->size = VECTOR2D::VGet2D(0, 0);
+
+	player->MoveAlg = PlayerMove;
 	
 }
 
 
 void PlayerManager::Update() {
 
-
+	player->MoveAlg(player);
 
 }
 
 void PlayerManager::Draw() {
 
-
-	
+	player->draw();
 }
 
-//プレイヤーの移動処理
-void PlayerMove(OBJ2D obj)
+//プレイヤーの移動関数
+void PlayerMove(OBJ2D* obj)
 {
-
+	obj->position.x-=0.5;
 }
 
-void Player::PShot() {
 
-}

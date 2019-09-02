@@ -21,6 +21,7 @@ void OBJ2D::LoadSprite(char*FileName, OBJ2D::STATE StateNum, int SpriteNum)
 
 void OBJ2D::draw()
 {
+
 	DrawGraph(position.x-size.x/2,
 		position.y-size.y/2,
 		SpriteHandle[state][SpriteNumber],

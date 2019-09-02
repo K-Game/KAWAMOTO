@@ -31,7 +31,7 @@ public:
 
 	void LoadSprite(char*FileName,STATE StateNum,int SpriteNum);
 	void clear();
-	void (*MoveAlg)(OBJ2D obj);
+	void (*MoveAlg)(OBJ2D* obj);
 	void draw();
 
 };

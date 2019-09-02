@@ -13,13 +13,7 @@ enum {
 
 
 class Player:public OBJ2D {
-private:
-	Player();
-	~Player();
-
 public:
-	//‹““®
-	void PShot();
 };
 
 class PlayerManager
@@ -41,3 +35,6 @@ public:
 };
 
 #define pManager (PlayerManager::GetInstance())
+
+//ƒvƒŒƒCƒ„[‚ÌˆÚ“®ŠÖ”
+void PlayerMove(OBJ2D* obj);

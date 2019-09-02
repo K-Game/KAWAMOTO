@@ -3,12 +3,8 @@
 #include "DxLib.h"
 #include "winmain.h" 
 #include "Key.h"
+#include "player.h"
 
-void LoopSet() {
-	ScreenFlip() == 0
-	&& ProcessMessage() == 0
-	&& ClearDrawScreen() == 0;
-}
 
 
 // WinMain 
@@ -23,7 +19,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	SceneManager::ChangeScene(SceneManager::SCENE::TITLE);
 
 
-	while (LoopSet){   //メインループ
+	while (ScreenFlip() == 0 && ProcessMessage() == 0 && ClearDrawScreen() == 0){   //メインループ
 
 
 		SceneManager::Update();
@@ -60,17 +56,17 @@ void TitleScene::Draw()
 //ゲームシーンの定義
 void GameScene::Init()
 {
-
+	pManager->Init();
 }
 
 void GameScene::Update()
 {
-	int a = 0;
+	pManager->Update();
 }
 
 void GameScene::Draw()
 {
-
+	pManager->Draw();
 }
 
 //オーバーシーンの定義
