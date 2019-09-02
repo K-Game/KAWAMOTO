@@ -14,14 +14,7 @@ void Player::Init() {
 
 void Player::Undeta() {
 
-	switch (player->mode){
-	case P_ALIVE:
 
-		break;
-	case P_DEAD:
-
-		break;
-	}
 
 }
 

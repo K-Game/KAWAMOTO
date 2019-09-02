@@ -1,5 +1,5 @@
 #pragma once
-
+#include "Math.h"
 #define SPRITE_NUM 10
 
 class OBJ2D
