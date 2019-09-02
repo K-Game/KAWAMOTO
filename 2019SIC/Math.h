@@ -13,13 +13,28 @@ public:
 	float x;
 	float y;
 
-
-
 	//演算子のオーバーロード
-	VECTOR2D operator +(VECTOR2D v)
-	{
+	//　＋
+	VECTOR2D operator +(VECTOR2D v){
 		return VGet2D(this->x + v.x, this->y + v.y);
 	}
+	//　－
+	VECTOR2D operator -(VECTOR2D v) {
+		return VGet2D(this->x - v.x, this->y - v.y);
+	}
+	// *
+	VECTOR2D operator *(VECTOR2D v) {
+		return VGet2D(this->x * v.x, this->y * v.y);
+	}
+	// /
+	VECTOR2D operator  /(VECTOR2D v) {
+		return VGet2D(this->x / v.x, this->x / v.y);
+	}
+	//  ％
+	VECTOR2D operator +()
+	//　内積
+
+	//   外積
 	//残りは後で
 
 };

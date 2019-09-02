@@ -8,8 +8,7 @@
 Player* player;
 
 void Player::Init() {
-	player->obj = new OBJ2D("");
-
+	
 }
 
 
