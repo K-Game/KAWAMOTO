@@ -11,3 +11,8 @@ SpriteData PlayerData[30]
 	{ "../Data/MOVE5.png",STATE::LRUN,4 },
 	{ NULL }
 };
+
+SpriteData EnemyData[30]{
+	{"../Data/ENEMY1.png",STATE::LWAIT,0},
+
+};
