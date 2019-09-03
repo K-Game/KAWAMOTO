@@ -49,7 +49,3 @@ struct SpriteData
 	int SpriteNum;
 };
 
-SpriteData PlayerData[30]=
-{
-	{"daaaaaa",}
-}
