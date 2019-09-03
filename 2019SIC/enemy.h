@@ -22,6 +22,6 @@ public:
 };
 
 //define’è‹`
-#define eManager(EnemyManager::GetInstance())
+#define eManager (EnemyManager::GetInstance())
 
 void EnemyMove1(OBJ2D* obj);
