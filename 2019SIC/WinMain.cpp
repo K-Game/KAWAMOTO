@@ -6,6 +6,7 @@
 #include "player.h"
 #include "enemy.h"
 #include "SpriteData.h"
+#include "fps.h"
 
 
 // WinMain 
@@ -13,6 +14,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 {
 	ChangeWindowMode(TRUE);//ウィンドウモード設定
 	SetMainWindowText("2019SIC"); //ウィンドウ名設定
+	Fps fps;
 	if (DxLib_Init() == -1)	{	// ＤＸライブラリ初期化処理
 		return -1;			// エラーが起きたら直ちに終了
 	}
@@ -21,6 +23,14 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 
 	while (ScreenFlip() == 0 && ProcessMessage() == 0 && ClearDrawScreen() == 0){   //メインループ
+
+
+		fps.Update();	//更新
+		fps.Draw();		//描画
+		ScreenFlip();
+		fps.Wait();		//待機
+
+		
 
 
 		SceneManager::Update();

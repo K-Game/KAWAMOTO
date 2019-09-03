@@ -155,6 +155,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="fps.cpp" />
     <ClCompile Include="HitCheck.cpp" />
     <ClCompile Include="Key.cpp" />
     <ClCompile Include="Obj2d.cpp" />
@@ -166,6 +167,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="enemy.h" />
+    <ClInclude Include="fps.h" />
     <ClInclude Include="hitcheck.h" />
     <ClInclude Include="Key.h" />
     <ClInclude Include="Math.h" />
