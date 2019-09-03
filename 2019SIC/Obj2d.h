@@ -29,9 +29,24 @@ public:
 	VECTOR2D  size;
 	bool alive;
 
+
+
+
 	void LoadSprite(char*FileName,STATE StateNum,int SpriteNum);
 	void clear();
 	void (*MoveAlg)(OBJ2D* obj);
 	void draw();
 
 };
+
+struct SpriteData
+{
+	char* Name;
+	OBJ2D::STATE stateNum;
+	int SpriteNum;
+};
+
+SpriteData PlayerData[30]=
+{
+	{"daaaaaa",}
+}
