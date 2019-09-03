@@ -4,14 +4,14 @@
 #include "shot.h"
 #include "enemy.h"
 
-ENEMYS*  Enemy;
 
+void EnemyManager::Init(){
+	Enemy = new ENEMYS;
+	Enemy->LoadSprite("../Data/ENEMY1.png", OBJ2D::STATE::LWAIT, 0);
+	Enemy->state = OBJ2D::STATE::LWAIT;
 
-
-
-
-
-void ENEMYS::Init() {
-	
 }
- 
+
+void EnemyMove(OBJ2D* obj){
+
+}

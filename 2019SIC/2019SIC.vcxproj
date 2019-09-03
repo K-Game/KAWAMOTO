@@ -160,6 +160,7 @@
     <ClCompile Include="Obj2d.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Shot.cpp" />
+    <ClCompile Include="Stage.cpp" />
     <ClCompile Include="WinMain.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -170,6 +171,7 @@
     <ClInclude Include="Obj2d.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="shot.h" />
+    <ClInclude Include="stage.h" />
     <ClInclude Include="winmain.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

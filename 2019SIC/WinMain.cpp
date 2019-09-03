@@ -4,6 +4,7 @@
 #include "winmain.h" 
 #include "Key.h"
 #include "player.h"
+#include "enemy.h"
 
 
 
@@ -57,6 +58,7 @@ void TitleScene::Draw()
 void GameScene::Init()
 {
 	pManager->Init();
+	eManager->Init();
 }
 
 void GameScene::Update()
