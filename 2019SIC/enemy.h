@@ -1,6 +1,8 @@
 #pragma once
 #include "Obj2d.h"
 
+#define Enemycount 20
+
 
 class ENEMYS:public OBJ2D {
 public:
@@ -14,7 +16,7 @@ public:
 	}
 
 private:
-	ENEMYS* Enemy;
+	ENEMYS* Enemy[20];
 public:
 	void Init();
 	void Updata();
