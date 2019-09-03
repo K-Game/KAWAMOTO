@@ -1,16 +1,5 @@
 #pragma once
 #include "Obj2d.h"
-enum {
-	PWAIT_L,
-	PWAIT_R,
-	PMOVE_L,
-	PMOVE_R,
-};
-enum {
-	P_ALIVE,
-	P_DEAD,
-};
-
 
 class Player:public OBJ2D {
 public:
