@@ -4,6 +4,7 @@
 #include "player.h"
 #include "shot.h"
 #include "Obj2d.h"
+#include "SpriteData.h"
 
 
 
@@ -11,8 +12,8 @@
 void PlayerManager::Init() {
 
 	player = new Player;
-	player->LoadSprite("../Data/MOVE1.png", OBJ2D::STATE::LRUN, 0);
-	player->state = OBJ2D::STATE::LRUN;
+	player->LoadSpriteData(PlayerData);
+	player->state = STATE::LRUN;
 	player->SpriteNumber = 0;
 	player->position = VECTOR2D::VGet2D(300, 300);
 	player->size = VECTOR2D::VGet2D(0, 0);

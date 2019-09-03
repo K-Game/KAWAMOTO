@@ -5,7 +5,7 @@
 #include "Key.h"
 #include "player.h"
 #include "enemy.h"
-
+#include "SpriteData.h"
 
 
 // WinMain 
@@ -27,19 +27,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		SceneManager::Draw();
 
 
-		SpriteData PlayerData[30] =
-		{
-			{ "daaaaaa",OBJ2D::STATE::LJUMP,0 },
-			{ "fooooo",OBJ2D::STATE::LJUMP,0 },
-		    {NULL}
-		};
-
-
-		for(int i=0;PlayerData[i].Name!=NULL;i++)
-		{
-
-			int aaa = 0;
-		}
 
 
 

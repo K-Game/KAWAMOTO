@@ -7,8 +7,8 @@
 
 void EnemyManager::Init(){
 	Enemy = new ENEMYS;
-	Enemy->LoadSprite("../Data/ENEMY1.png", OBJ2D::STATE::LWAIT, 0);
-	Enemy->state = OBJ2D::STATE::LWAIT;
+	//Enemy->LoadSprite("../Data/ENEMY1.png", OBJ2D::STATE::LWAIT, 0);
+	//Enemy->state = OBJ2D::STATE::LWAIT;
 
 }
 

@@ -1,5 +1,4 @@
 #include "DxLib.h"
-
 #include "Obj2d.h"
 
 void OBJ2D::clear()
@@ -13,9 +12,12 @@ void OBJ2D::clear()
 	MoveAlg = nullptr;
 }
 
-void OBJ2D::LoadSprite(char*FileName, OBJ2D::STATE StateNum, int SpriteNum)
+void OBJ2D::LoadSpriteData(SpriteData* data)
 {
-	SpriteHandle[StateNum][SpriteNum]=LoadGraph(FileName);
+	for(int i=0;data[i].Name!=NULL;i++)
+	{
+		SpriteHandle[data[i].stateNum][data[i].SpriteNum] = LoadGraph(data[i].Name);
+	}
 }
 
 

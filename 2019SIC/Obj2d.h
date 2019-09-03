@@ -1,6 +1,18 @@
 #pragma once
 #include "Math.h"
+#include "SpriteData.h"
 #define SPRITE_NUM 10
+
+enum STATE
+{
+	RWAIT,
+	LWAIT,
+	RRUN,
+	LRUN,
+	RJUMP,
+	LJUMP,
+	NUM,
+};
 
 class OBJ2D
 {
@@ -8,17 +20,6 @@ class OBJ2D
 
 
 public:
-
-	enum STATE
-	{
-		RWAIT,
-		LWAIT,
-		RRUN,
-		LRUN,
-		RJUMP,
-		LJUMP,
-		NUM,
-	};
 
 
 	int SpriteHandle[STATE::NUM][SPRITE_NUM];
@@ -32,7 +33,7 @@ public:
 
 
 
-	void LoadSprite(char*FileName,STATE StateNum,int SpriteNum);
+	void LoadSpriteData(SpriteData* data);
 
 	void clear();
 
@@ -40,12 +41,5 @@ public:
 
 	void draw();
 
-};
-
-struct SpriteData
-{
-	char* Name;
-	OBJ2D::STATE stateNum;
-	int SpriteNum;
 };
 
