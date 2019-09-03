@@ -1,5 +1,7 @@
 #pragma once
 
+
+
 //シーン基底クラス
 class Scene
 {
