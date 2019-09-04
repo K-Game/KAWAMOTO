@@ -52,11 +52,12 @@ void PlayerMove::move(OBJ2D* obj)
 	if (Key[KEY_INPUT_LEFT] > 1)obj->velocity.x -= PLAYER_SPEED;
 
 
-
 	obj->velocity.x = fmin(obj->velocity.x, PLAYER_MAX_SPEED);
 	obj->velocity.x = fmax(obj->velocity.x, -PLAYER_MAX_SPEED);
 
 	obj->velocity.x *= PLAYER_FRICTION;
+
+
 	if (fabs(obj->velocity.x) < PLAYER_ZERO_SPEED)obj->velocity.x=0;
 
 	obj->position.x += obj->velocity.x;

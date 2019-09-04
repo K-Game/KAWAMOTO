@@ -17,6 +17,8 @@ public:
 private:
 	TITLE* title;
 public:
+	int Back;
+
 	void Init();
 	void Updata();
 	void Draw();

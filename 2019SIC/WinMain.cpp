@@ -8,6 +8,8 @@
 #include "SpriteData.h"
 #include "fps.h"
 #include "title.h"
+#include "UI.h"
+#include "gameback.h"
 
 // WinMain 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
@@ -33,8 +35,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 		KeyUpdate();
 
-		if(Key[KEY_INPUT_RETURN]==1)SceneManager::ChangeScene(SceneManager::SCENE::GAME);
-
+		if (Key[KEY_INPUT_RETURN] == 1)SceneManager::ChangeScene(SceneManager::SCENE::GAME);
 
 		}
 
@@ -50,7 +51,7 @@ void TitleScene::Init()
 
 void TitleScene::Update()
 {
-	tManager->Updata();
+	
 }
 
 void TitleScene::Draw()
@@ -61,17 +62,24 @@ void TitleScene::Draw()
 //ゲームシーンの定義
 void GameScene::Init()
 {
+	//固定
+	gbManager->Init();
+
 	pManager->Init();
 	eManager->Init();
 }
 
 void GameScene::Update()
 {
+	gbManager->Updata();
+
 	pManager->Update();
 }
 
 void GameScene::Draw()
 {
+	gbManager->Draw();
+
 	pManager->Draw();
 }
 
