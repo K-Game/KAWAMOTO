@@ -15,7 +15,7 @@ public:
 		return &playerManager;
 	}
 
-private:
+//private:
 	Player* player;
 public:
 	void Init();

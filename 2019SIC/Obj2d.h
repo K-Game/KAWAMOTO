@@ -55,6 +55,7 @@ public:
 	void clear();
 
 	void draw();
+	void resizedraw(int posX,int posY,int sizeX,int sizeY);
 
 };
 

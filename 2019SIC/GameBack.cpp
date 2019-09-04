@@ -4,9 +4,10 @@
 #include "Obj2d.h"
 #include "SpriteData.h"
 #include "gameback.h"
+#include "player.h"
 
 void GBackManager::Init(){
-	f/*or (int a = 0; a > 2; a++) {
+	/*for (int a = 0; a > 2; a++) {
 		gback[a] = new GBACK;
 		gback[a]->LoadSpriteData(BackData);
 		gback[a]->state = STATE::BACK;
@@ -28,7 +29,6 @@ void GBackManager::Init(){
 }
 
 void GBackManager::Updata() {
-
 }
 
 void GBackManager::Draw() {

@@ -28,6 +28,13 @@ void OBJ2D::draw()
 		TRUE);
 }
 
+void OBJ2D::resizedraw(int posX, int posY, int sizeX, int sizeY) {
+	DrawExtendGraph(position.x + posX,
+								position.y + posY,sizeX,sizeY, 
+								SpriteHandle[state][SpriteNumber],TRUE
+	);
+}
+
 void OBJ2D::Add(MoveAlg* MoveAlg, VECTOR2D pos, VECTOR2D Size, SpriteData* data)
 {
 	moveAlg = MoveAlg;
