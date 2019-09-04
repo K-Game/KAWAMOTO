@@ -14,6 +14,7 @@ enum STATE
 	NUM,
 	START,
 	GAMEBAKE,
+	GAMEUI,
 };
 
 class OBJ2D
