@@ -16,6 +16,7 @@ enum STATE
 	NUM,
 	START,
 	GAMEBAKE,
+	GAMEUI,
 };
 
 //class MoveAlg

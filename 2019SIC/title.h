@@ -8,7 +8,6 @@ public:
 class TitleManager
 {
 public:
-
 	static TitleManager* GetInstance()
 	{
 		static TitleManager titlemanager;
@@ -24,3 +23,5 @@ public:
 };
 
 #define tManager (TitleManager::GetInstance())
+
+void Select(OBJ2D*);

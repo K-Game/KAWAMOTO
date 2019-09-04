@@ -21,3 +21,11 @@ SpriteData BakeData[10]{
 	{"../Data/StartImage.png",STATE::START,0},
 	{"../Data/StageImage.png",STATE::GAMEBAKE,1},
 };
+
+SpriteData UIData[20]{
+	{"../Data/StartUI1.png",STATE::GAMEUI,0},
+	{ "../Data/StartUI2.png",STATE::GAMEUI,1 },
+	{ "../Data/EndUI1.png",STATE::GAMEUI,2 },
+	{ "../Data/EndUI2.png",STATE::GAMEUI,3 },
+
+};
