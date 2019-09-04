@@ -23,5 +23,3 @@ public:
 };
 
 #define tManager (TitleManager::GetInstance())
-
-void Select(OBJ2D*);

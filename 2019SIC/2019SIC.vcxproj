@@ -164,6 +164,7 @@
     <ClCompile Include="SpriteData.cpp" />
     <ClCompile Include="Stage.cpp" />
     <ClCompile Include="Title.cpp" />
+    <ClCompile Include="UI.cpp" />
     <ClCompile Include="WinMain.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -178,6 +179,7 @@
     <ClInclude Include="SpriteData.h" />
     <ClInclude Include="stage.h" />
     <ClInclude Include="title.h" />
+    <ClInclude Include="UI.h" />
     <ClInclude Include="winmain.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
