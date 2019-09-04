@@ -22,6 +22,3 @@ void TitleManager::Draw() {
 	title->draw();
 }
 
-void Select(OBJ2D* obj) {
-
-}
