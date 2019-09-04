@@ -37,4 +37,14 @@ void OBJ2D::Add(MoveAlg* MoveAlg, VECTOR2D pos, VECTOR2D Size, SpriteData* data)
 	alive = true;
 }
 
+void  OBJ2D::Add(MoveAlg* MoveAlg, VECTOR2D pos, VECTOR2D Size, VECTOR2D Verocity, SpriteData* data)
+{
+	moveAlg = MoveAlg;
+	position = pos;
+	velocity = Verocity;
+	size = Size;
+	LoadSpriteData(data);
+	alive = true;
+}
+
 

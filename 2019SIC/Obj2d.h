@@ -19,6 +19,12 @@ enum STATE
 	NUM,
 };
 
+enum SHOT_STATE
+{
+	NORMAL,
+};
+
+
 class MoveAlg
 {
 public:
@@ -43,7 +49,8 @@ public:
 
 	void LoadSpriteData(SpriteData* data);
 
-	void Add(MoveAlg* moveAlg,VECTOR2D pos,VECTOR2D size,SpriteData* data);
+	void Add(MoveAlg* MoveAlg, VECTOR2D pos, VECTOR2D Size, SpriteData* data);
+	void Add(MoveAlg* MoveAlg, VECTOR2D pos, VECTOR2D Size,VECTOR2D Verocity, SpriteData* data);
 
 	void clear();
 
