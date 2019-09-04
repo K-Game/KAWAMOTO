@@ -8,6 +8,7 @@
 #include "SpriteData.h"
 #include "fps.h"
 #include "title.h"
+#include "shot.h"
 #include "UI.h"
 #include "gameback.h"
 
@@ -35,7 +36,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 		KeyUpdate();
 
-		if (Key[KEY_INPUT_RETURN] == 1)SceneManager::ChangeScene(SceneManager::SCENE::GAME);
+		
+
 
 		}
 
@@ -51,7 +53,8 @@ void TitleScene::Init()
 
 void TitleScene::Update()
 {
-	
+	tManager->Updata();
+	if (Key[KEY_INPUT_RETURN] == 1)SceneManager::ChangeScene(SceneManager::SCENE::GAME);
 }
 
 void TitleScene::Draw()
@@ -67,6 +70,7 @@ void GameScene::Init()
 
 	pManager->Init();
 	eManager->Init();
+	sManager->Init();
 }
 
 void GameScene::Update()
@@ -74,6 +78,7 @@ void GameScene::Update()
 	gbManager->Updata();
 
 	pManager->Update();
+	sManager->Update();
 }
 
 void GameScene::Draw()
@@ -81,6 +86,7 @@ void GameScene::Draw()
 	gbManager->Draw();
 
 	pManager->Draw();
+	sManager->Draw();
 }
 
 //オーバーシーンの定義

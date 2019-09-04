@@ -48,8 +48,16 @@ void PlayerMove::move(OBJ2D* obj)
 {
 
 
-	if (Key[KEY_INPUT_RIGHT] > 1)obj->velocity.x += PLAYER_SPEED;
-	if (Key[KEY_INPUT_LEFT] > 1)obj->velocity.x -= PLAYER_SPEED;
+	if (Key[KEY_INPUT_RIGHT] > 1)
+	{
+		obj->velocity.x += PLAYER_SPEED;
+		obj->state = STATE::RRUN;
+	}
+	if (Key[KEY_INPUT_LEFT] > 1)
+	{
+		obj->velocity.x -= PLAYER_SPEED;
+		obj->state = STATE::LRUN;
+	}
 
 
 	obj->velocity.x = fmin(obj->velocity.x, PLAYER_MAX_SPEED);
@@ -59,6 +67,14 @@ void PlayerMove::move(OBJ2D* obj)
 
 
 	if (fabs(obj->velocity.x) < PLAYER_ZERO_SPEED)obj->velocity.x=0;
+
+	if (Key[KEY_INPUT_Z] == 1&& obj->state == STATE::RRUN)sManager->Add(&playerNormalShot, obj->position, VECTOR2D::VGet2D(0, 0), VECTOR2D::VGet2D(10, 0), ShotData);
+	if (Key[KEY_INPUT_Z] == 1&& obj->state == STATE::LRUN)sManager->Add(&playerNormalShot, obj->position, VECTOR2D::VGet2D(0, 0), VECTOR2D::VGet2D(-10, 0), ShotData);
+
+	obj->state = STATE::LRUN;
+
+
+
 
 	obj->position.x += obj->velocity.x;
 }

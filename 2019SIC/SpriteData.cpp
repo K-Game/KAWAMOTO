@@ -30,3 +30,8 @@ SpriteData UIData[20]{
 	{ "./Data/EndUI2.png",STATE::GAMEUI,3 },
 	{NULL}
 };
+
+SpriteData ShotData[30]{
+	{ "./Data/Barrett.png",SHOT_STATE::NORMAL,0 },
+	{ NULL }
+};
