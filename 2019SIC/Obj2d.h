@@ -3,6 +3,8 @@
 #include "SpriteData.h"
 #define SPRITE_NUM 10
 
+class OBJ2D;
+
 enum STATE
 {
 	RWAIT,
@@ -16,11 +18,16 @@ enum STATE
 	GAMEBAKE,
 };
 
+//class MoveAlg
+//{
+//public:
+//	virtual void move(OBJ2D obj) = 0;
+//};
+
 class OBJ2D
 {
 
-
-
+	
 public:
 
 
@@ -33,7 +40,7 @@ public:
 	bool alive;
 
 
-
+	//virtual void Add();
 
 	void LoadSpriteData(SpriteData* data);
 

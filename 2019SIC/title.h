@@ -8,8 +8,6 @@ public:
 class TitleManager
 {
 public:
-	TitleManager();
-	~TitleManager();
 
 	static TitleManager* GetInstance()
 	{

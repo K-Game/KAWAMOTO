@@ -12,6 +12,14 @@
 void PlayerManager::Init() {
 
 	player = new Player;
+
+
+
+
+
+
+
+
 	player->LoadSpriteData(PlayerData);
 	player->state = STATE::LRUN;
 	player->SpriteNumber = 0;

@@ -6,4 +6,6 @@
 
 #include "title.h"
 
-TITLE::
+void Init();
+void Updata();
+void Draw();
