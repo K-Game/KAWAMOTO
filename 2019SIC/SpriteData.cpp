@@ -20,4 +20,8 @@ SpriteData EnemyData[30]{
 SpriteData BakeData[10]{
 	{"../Data/StartImage.png",STATE::START,0},
 	{"../Data/StageImage.png",STATE::GAMEBAKE,1},
-}
+};
+
+SpriteData UIData[20]{
+
+};

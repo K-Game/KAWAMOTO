@@ -10,3 +10,5 @@ struct SpriteData
 extern SpriteData PlayerData[30];
 
 extern SpriteData EnemyData[30];
+
+extern SpriteData BakeData[10];
