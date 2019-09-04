@@ -39,12 +39,11 @@ public:
 	VECTOR2D  velocity;
 	VECTOR2D  size;
 	bool alive;
-	MoveAlg* MoveAlg;
-
-
-	//virtual void Add();
+	MoveAlg* moveAlg;
 
 	void LoadSpriteData(SpriteData* data);
+
+	void Add(MoveAlg* moveAlg,VECTOR2D pos,VECTOR2D size,SpriteData* data);
 
 	void clear();
 

@@ -9,7 +9,6 @@ void OBJ2D::clear()
 	size = VECTOR2D::VGet2D(0, 0);
 	SpriteNumber = 0;
 	alive = false;
-	MoveAlg = nullptr;
 }
 
 void OBJ2D::LoadSpriteData(SpriteData* data)
@@ -28,3 +27,14 @@ void OBJ2D::draw()
 		SpriteHandle[state][SpriteNumber],
 		TRUE);
 }
+
+void OBJ2D::Add(MoveAlg* MoveAlg, VECTOR2D pos, VECTOR2D Size, SpriteData* data)
+{
+	moveAlg = MoveAlg;
+	position = pos;
+	size = Size;
+	LoadSpriteData(data);
+	alive = true;
+}
+
+
