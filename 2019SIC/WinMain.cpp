@@ -7,7 +7,7 @@
 #include "enemy.h"
 #include "SpriteData.h"
 #include "fps.h"
-
+#include "title.h"
 
 // WinMain 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
@@ -54,17 +54,17 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 //タイトルシーンの定義
 void TitleScene::Init()
 {
-
+	tManager->Init();
 }
 
 void TitleScene::Update()
 {
-
+	tManager->Updata();
 }
 
 void TitleScene::Draw()
 {
-
+	tManager->Draw();
 }
 
 //ゲームシーンの定義

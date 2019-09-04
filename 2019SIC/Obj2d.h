@@ -12,6 +12,8 @@ enum STATE
 	RJUMP,
 	LJUMP,
 	NUM,
+	START,
+	GAMEBAKE,
 };
 
 class OBJ2D

@@ -16,3 +16,8 @@ SpriteData EnemyData[30]{
 	{"../Data/ENEMY1.png",STATE::LWAIT,0},
 
 };
+
+SpriteData BakeData[10]{
+	{"../Data/StartImage.png",STATE::START,0},
+	{"../Data/StageImage.png",STATE::GAMEBAKE,1},
+}
