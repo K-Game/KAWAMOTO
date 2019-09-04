@@ -19,11 +19,11 @@ enum STATE
 	GAMEUI,
 };
 
-//class MoveAlg
-//{
-//public:
-//	virtual void move(OBJ2D obj) = 0;
-//};
+class MoveAlg
+{
+public:
+	virtual void move(OBJ2D* obj) = 0;
+};
 
 class OBJ2D
 {
@@ -33,12 +33,13 @@ public:
 
 
 	int SpriteHandle[STATE::NUM][SPRITE_NUM];
-	int SpriteNumber;
+	int SpriteNumber; 
 	int state;
 	VECTOR2D  position;
 	VECTOR2D  velocity;
 	VECTOR2D  size;
 	bool alive;
+	MoveAlg* MoveAlg;
 
 
 	//virtual void Add();
@@ -46,8 +47,6 @@ public:
 	void LoadSpriteData(SpriteData* data);
 
 	void clear();
-
-	void (*MoveAlg)(OBJ2D* obj);
 
 	void draw();
 
