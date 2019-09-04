@@ -29,8 +29,8 @@ void OBJ2D::draw()
 }
 
 void OBJ2D::resizedraw(int posX, int posY, int sizeX, int sizeY) {
-	DrawExtendGraph(position.x + posX,
-								position.y + posY,sizeX,sizeY, 
+	DrawExtendGraph(posX,posY,
+								sizeX,sizeY, 
 								SpriteHandle[state][SpriteNumber],TRUE
 	);
 }
