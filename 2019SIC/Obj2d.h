@@ -13,9 +13,10 @@ enum STATE
 	LRUN,
 	RJUMP,
 	LJUMP,
-	NUM,
-	BAKE,
+	BACK,
 	GAMEUI,
+
+	NUM,
 };
 
 class MoveAlg

@@ -27,7 +27,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 		fps.Update();	//çXêV
 		fps.Draw();		//ï`âÊ
-		ScreenFlip();
 		fps.Wait();		//ë“ã@
 
 		SceneManager::Update();

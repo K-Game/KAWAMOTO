@@ -17,9 +17,9 @@ SpriteData EnemyData[30]{
 	{NULL}
 };
 
-SpriteData BakeData[10]{
-	{"./Data/StartImage.png",STATE::BAKE,0},
-	{"./Data/StageImage.png",STATE::BAKE,1},
+SpriteData BackData[10]{
+	{"./Data/StartImage.jpg",STATE::BACK,0},
+	{"./Data/StageImage.jpg",STATE::BACK,1},
 	{NULL}
 };
 
