@@ -21,7 +21,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 	SceneManager::ChangeScene(SceneManager::SCENE::TITLE);
 
-
 	while (ScreenFlip() == 0 && ProcessMessage() == 0 && ClearDrawScreen() == 0){   //ƒƒCƒ“ƒ‹[ƒv
 
 

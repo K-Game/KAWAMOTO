@@ -8,8 +8,8 @@
 
 void TitleManager::Init() {
 	title = new TITLE;
-	title->LoadSpriteData(BakeData);
-	title->state = STATE::BAKE;
+	title->LoadSpriteData(BackData);
+	title->state = STATE::BACK;
 	title->SpriteNumber = 0;
 	title->position = VECTOR2D::VGet2D(0,0);
 	title->size = VECTOR2D::VGet2D(0,0);
