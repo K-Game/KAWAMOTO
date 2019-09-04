@@ -20,14 +20,14 @@ void PlayerManager::Init() {
 	player->position = VECTOR2D::VGet2D(300, 300);
 	player->size = VECTOR2D::VGet2D(0, 0);
 
-	player->MoveAlg = &playerMove;
+	player->moveAlg = &playerMove;
 	
 }
 
 
 void PlayerManager::Update() {
 
-	player->MoveAlg->move(player);
+	player->moveAlg->move(player);
 
 }
 
