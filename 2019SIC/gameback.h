@@ -15,7 +15,8 @@ public:
 	}
 
 private:
-	GBACK* gback[10];
+
+
 public:
 	int Back;
 
@@ -25,3 +26,9 @@ public:
 };
 
 #define gbManager (GBackManager::GetInstance())
+
+class GBMove :public MoveAlg
+{
+public:
+	void move(OBJ2D* obj);
+};

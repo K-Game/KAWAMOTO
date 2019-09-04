@@ -27,6 +27,11 @@ public:
 	void GAME_UI();
 	void OVER_UI();
 
+	void TU_Update();
+	void GU_Update();
+	void OU_Update();
+
+
 	void TITLE_Draw();
 	void GAME_Draw();
 	void OVER_Draw();

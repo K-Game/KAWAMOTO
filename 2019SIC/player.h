@@ -1,6 +1,8 @@
 #pragma once
 #include "Obj2d.h"
 
+
+
 class Player:public OBJ2D {
 public:
 };
@@ -15,7 +17,7 @@ public:
 		return &playerManager;
 	}
 
-//private:
+private:
 	Player* player;
 public:
 	void Init();

@@ -49,6 +49,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 void TitleScene::Init()
 {
 	tManager->Init();
+	uManager->Init();
 }
 
 void TitleScene::Update()
@@ -67,6 +68,7 @@ void GameScene::Init()
 {
 	//固定
 	gbManager->Init();
+	uManager->Init();
 
 	pManager->Init();
 	eManager->Init();
@@ -76,6 +78,7 @@ void GameScene::Init()
 void GameScene::Update()
 {
 	gbManager->Updata();
+	uManager->Updata();
 
 	pManager->Update();
 	sManager->Update();
@@ -92,7 +95,7 @@ void GameScene::Draw()
 //オーバーシーンの定義
 void OverScene::Init()
 {
-
+	uManager->Init();
 }
 
 void OverScene::Update()

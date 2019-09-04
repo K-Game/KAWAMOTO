@@ -16,7 +16,7 @@ void PlayerManager::Init() {
 	player = new Player;
 	player->Add(
 		&playerMove,//移動アルゴリズム
-		VECTOR2D::VGet2D(300, 300),//座標
+		VECTOR2D::VGet2D(300, 380),//座標
 		VECTOR2D::VGet2D(0, 0),//サイズ
 		PlayerData//画像データ
 	);
@@ -65,12 +65,13 @@ void PlayerMove::move(OBJ2D* obj)
 
 	obj->velocity.x *= PLAYER_FRICTION;
 
-
+	//	ショット関係
 	if (fabs(obj->velocity.x) < PLAYER_ZERO_SPEED)obj->velocity.x=0;
 
 	if (Key[KEY_INPUT_Z] == 1&& obj->state == STATE::RRUN)sManager->Add(&playerNormalShot, obj->position, VECTOR2D::VGet2D(0, 0), VECTOR2D::VGet2D(10, 0), ShotData);
 	if (Key[KEY_INPUT_Z] == 1&& obj->state == STATE::LRUN)sManager->Add(&playerNormalShot, obj->position, VECTOR2D::VGet2D(0, 0), VECTOR2D::VGet2D(-10, 0), ShotData);
 
+	
 	obj->state = STATE::LRUN;
 
 
