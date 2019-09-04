@@ -14,12 +14,13 @@ SpriteData PlayerData[30]
 
 SpriteData EnemyData[30]{
 	{"./Data/ENEMY1.png",STATE::LWAIT,0},
-
+	{NULL}
 };
 
 SpriteData BakeData[10]{
-	{"./Data/StartImage.png",STATE::START,0},
-	{"./Data/StageImage.png",STATE::GAMEBAKE,1},
+	{"./Data/StartImage.png",STATE::BAKE,0},
+	{"./Data/StageImage.png",STATE::BAKE,1},
+	{NULL}
 };
 
 SpriteData UIData[20]{
@@ -27,5 +28,5 @@ SpriteData UIData[20]{
 	{ "./Data/StartUI2.png",STATE::GAMEUI,1 },
 	{ "./Data/EndUI1.png",STATE::GAMEUI,2 },
 	{ "./Data/EndUI2.png",STATE::GAMEUI,3 },
-
+	{NULL}
 };

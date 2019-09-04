@@ -14,8 +14,7 @@ enum STATE
 	RJUMP,
 	LJUMP,
 	NUM,
-	START,
-	GAMEBAKE,
+	BAKE,
 	GAMEUI,
 };
 

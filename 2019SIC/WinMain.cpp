@@ -30,15 +30,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		ScreenFlip();
 		fps.Wait();		//‘Ò‹@
 
-		
-
-
 		SceneManager::Update();
 		SceneManager::Draw();
-
-
-
-
 
 		KeyUpdate();
 
