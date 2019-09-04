@@ -26,4 +26,11 @@ public:
 #define pManager (PlayerManager::GetInstance())
 
 //ƒvƒŒƒCƒ„[‚ÌˆÚ“®ŠÖ”
-void PlayerMove(OBJ2D* obj);
+
+class PlayerMove :public MoveAlg
+{
+public:
+	void move(OBJ2D* obj);
+};
+
+

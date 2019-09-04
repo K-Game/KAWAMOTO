@@ -6,7 +6,8 @@
 #include "Obj2d.h"
 #include "SpriteData.h"
 
-
+//MoveAlgの実体化
+PlayerMove playerMove;
 
 
 void PlayerManager::Init() {
@@ -19,14 +20,14 @@ void PlayerManager::Init() {
 	player->position = VECTOR2D::VGet2D(300, 300);
 	player->size = VECTOR2D::VGet2D(0, 0);
 
-	player->MoveAlg = PlayerMove;
+	player->MoveAlg = &playerMove;
 	
 }
 
 
 void PlayerManager::Update() {
 
-	player->MoveAlg(player);
+	player->MoveAlg->move(player);
 
 }
 
@@ -35,10 +36,8 @@ void PlayerManager::Draw() {
 	player->draw();
 }
 
-//プレイヤーの移動関数
-void PlayerMove(OBJ2D* obj)
+//プレイヤー移動
+void PlayerMove::move(OBJ2D* obj)
 {
-	obj->position.x-=0.5;
+	obj->position.x -= 0.5;
 }
-
-
