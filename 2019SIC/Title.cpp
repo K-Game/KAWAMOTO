@@ -9,10 +9,13 @@
 void TitleManager::Init() {
 	title = new TITLE;
 	title->LoadSpriteData(BakeData);
+	title->SpriteNumber = 0;
 	title->state = STATE::START;
+	title->position = VECTOR2D::VGet2D(500,333);
+	title->size = VECTOR2D::VGet2D(0,0);
 
-	title->MoveAlg = Select;
 }
+
 
 void TitleManager::Updata(){
 
@@ -22,6 +25,3 @@ void TitleManager::Draw() {
 	title->draw();
 }
 
-void Select(OBJ2D* obj) {
-
-}
