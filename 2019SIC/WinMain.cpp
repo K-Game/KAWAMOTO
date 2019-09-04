@@ -33,7 +33,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 		KeyUpdate();
 
-		if(Key[KEY_INPUT_RIGHT]==1)SceneManager::ChangeScene(SceneManager::SCENE::GAME);
+		if(Key[KEY_INPUT_RETURN]==1)SceneManager::ChangeScene(SceneManager::SCENE::GAME);
 
 
 		}
