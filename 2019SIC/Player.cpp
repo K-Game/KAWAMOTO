@@ -13,14 +13,15 @@ PlayerMove playerMove;
 void PlayerManager::Init() {
 
 	player = new Player;
+	player->Add(
+		&playerMove,//移動アルゴリズム
+		VECTOR2D::VGet2D(300, 300),//座標
+		VECTOR2D::VGet2D(0, 0),//サイズ
+		PlayerData//画像データ
+	);
 
-	player->LoadSpriteData(PlayerData);
 	player->state = STATE::LRUN;
 	player->SpriteNumber = 0;
-	player->position = VECTOR2D::VGet2D(300, 300);
-	player->size = VECTOR2D::VGet2D(0, 0);
-
-	player->moveAlg = &playerMove;
 	
 }
 

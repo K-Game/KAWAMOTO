@@ -28,4 +28,13 @@ void OBJ2D::draw()
 		TRUE);
 }
 
+void OBJ2D::Add(MoveAlg* MoveAlg, VECTOR2D pos, VECTOR2D Size, SpriteData* data)
+{
+	moveAlg = MoveAlg;
+	position = pos;
+	size = Size;
+	LoadSpriteData(data);
+	alive = true;
+}
+
 
