@@ -4,4 +4,6 @@
 #include "Obj2d.h"
 #include "SpriteData.h"
 
+#include "title.h"
 
+TITLE::
